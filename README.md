@@ -1,5 +1,5 @@
 # logiq-firelens-fluentbit
-Custom Logiq fluent bit image for AWS firelens for Fargate, we have made use of the  'file' 'config-file-type' in FireLens.
+Custom Logiq fluent bit image for AWS firelens for Fargate, we have made use of the  'file' 'config-file-type' in FireLens as Fargate 1.4 does not support S3 file configuration.
 
 **How to use:**
 - Download the repository and Navigate into Custom-fluent-bit-image.
