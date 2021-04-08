@@ -11,6 +11,7 @@ Custom Logiq fluent bit image for AWS firelens for Fargate, we have made use of 
    ``` aws ecr get-login ```
 - Once logged in, push the image to private ECR registry.
 ``` docker push  Username.dkr.region.amazon.com/logiqconfiguration ```
+- Use this image in the log_router firelens image.
 - Reference the config file path in the FireLens configuration:</br>
 ```
 "firelensConfiguration": {
@@ -20,4 +21,5 @@ Custom Logiq fluent bit image for AWS firelens for Fargate, we have made use of 
         "config-file-value": "/firelens.conf"
     }
 }
+
 ```
